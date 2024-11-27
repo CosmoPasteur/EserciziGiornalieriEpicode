@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+    background-color: hwb(60 45% 8% / 0.647);
+    margin: 0;
+}
+h3 {
+    color: rgb(16, 42, 16);
+    background-color: rgba(247, 185, 196, 0.682);
+    margin: 0;
+    border-top: solid 2px orange; 
+}
+
+header img {    
+    margin: auto;
+    width: 200px;
+}
+.cent { width: 50%;
+    margin: auto;
+    text-align: center;}
+
+.autore {
+    text-align: center;
+    color: grey;
+}
+
+nav p {    
+    color: rgb(255, 68, 0);
+}
+
+.articole {
+    text-align: center;
+    
+}
