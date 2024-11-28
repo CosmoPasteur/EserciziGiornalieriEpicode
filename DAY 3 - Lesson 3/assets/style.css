@@ -34,5 +34,6 @@ nav p {
 .article {
     width: 50%;
     margin-block-start: 0; 
+    margin: 0 auto;
 }
 
