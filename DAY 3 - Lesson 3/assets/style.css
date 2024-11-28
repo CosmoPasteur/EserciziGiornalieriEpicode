@@ -31,7 +31,8 @@ nav p {
     color: rgb(255, 68, 0);
 }
 
-#article {
-  text-align: center;
+.article {
+    width: 50%;
+    margin-block-start: 0; 
 }
 
