@@ -23,11 +23,15 @@ header img {
     color: grey;
 }
 
+nav {
+    border-left: 2px solid #ffebbb ;
+    padding-left: 15px;
+}
 nav p {    
     color: rgb(255, 68, 0);
 }
 
-.articole {
-    text-align: center;
-    
+#article {
+  text-align: center;
 }
+
