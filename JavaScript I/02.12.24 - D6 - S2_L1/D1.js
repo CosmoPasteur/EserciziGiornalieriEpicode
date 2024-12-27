@@ -30,7 +30,7 @@ Inoltre quando si programma a volte si può trovare anche il valore null, esso r
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 2")
-let myName = "Cosimo"
+const myName = "Cosimo"
 console.log("Il mio nome è"+ " " +myName) 
 console.log("************************************************************");
 
@@ -66,7 +66,7 @@ console.log("************************************************************");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZO 5")
-//const myName = "pastore"
+//myName = "pastore"
 
 console.log("Cannot redeclare block-scoped variable 'myName'.") 
 console.log("************************************************************");
