@@ -80,7 +80,7 @@ console.log("ESERCIZIO 6")
 let num = 4 
 let k = 12
 console.log(num - x )
-console.log("Il risultato della sottrazione '4' - 'x'(in questo caso k, ma con valore comunque 12) è di -8.") 
+console.log("Il risultato della sottrazione tra "+num+" e il valore x("+x+")(in questo caso k, ma con valore comunque 12) è "+(num - x )+".") 
 console.log("************************************************************");
 
 /* ESERCIZIO 7
