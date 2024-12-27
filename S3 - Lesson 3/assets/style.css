@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background: rgb(2,0,36);    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(333deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(255,81,0,1) 100%);
+    padding: 10px;
+    
+}
+
+#todo-Box {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10%;
+}
+
+#todo-Box h2{
+    color: rgb(36, 136, 0);
+    text-align: center;
+}
+.box2{
+    text-align: center;
+    padding-bottom: 5%;
+}
+#todoList{
+    list-style: none;
+}
+li {
+    padding: 2% 15%;
+    cursor: pointer;    
+}
+
+ul li span{
+    position: absolute;
+}
+
+.delete::before {
+    text-decoration: line-through;
+    color: rgb(151, 2, 2);
+}
