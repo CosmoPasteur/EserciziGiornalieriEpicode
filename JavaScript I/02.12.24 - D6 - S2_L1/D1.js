@@ -97,5 +97,6 @@ console.log("la variabile 'name1' e la variabile 'name2' sono uguali:")
 console.log(name1===name2)
 
 console.log("Il contenuto della variabile name1 (" + name1.toLowerCase() + ") e il contenuto della variabile name2 (" + name2.toLowerCase() + ") è uguale: " + ( name1.toLowerCase() === name2.toLowerCase()))
+
 console.log("************************************************************");
 
