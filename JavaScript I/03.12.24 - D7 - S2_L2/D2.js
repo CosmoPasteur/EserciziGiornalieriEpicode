@@ -13,7 +13,6 @@ if(a > b) {
 } else {
   console.log("il valore a e il valore b sono uguali")
 }
-
 console.log("*****************************************************************************");
 
 
