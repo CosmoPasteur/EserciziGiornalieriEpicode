@@ -262,6 +262,8 @@ console.log("*******************************************************************
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 14")
 
+const arrayVuoto = [];
+console.log(arrayVuoto);
 console.log("*****************************************************************************");
 
 /* ESERCIZIO 15
