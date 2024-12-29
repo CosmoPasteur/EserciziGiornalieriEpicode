@@ -252,7 +252,7 @@ const me2 = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-delete me2.skills[2];
+me2.skills.pop(2);
 console.log(me2);
 console.log("*****************************************************************************");
 /* ESERCIZIO 14
@@ -260,6 +260,9 @@ console.log("*******************************************************************
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 14")
+
+console.log("*****************************************************************************");
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
