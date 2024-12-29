@@ -31,11 +31,11 @@ if(num !== 5) {
 
 // OPPURE: 
 
-console.log("oppure")
+/*console.log("oppure")
 let numb = 5;
 if(numb > 5 || numb < 5) {
   console.log( numb + " not equal ")
-};
+};*/
 console.log("*****************************************************************************");
 
 
@@ -198,10 +198,7 @@ if (val < 5) {
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-  
-
-
-console.log("*****************************************************************************");
+  console.log("*****************************************************************************");
 
 
 /* ESERCIZIO 11
@@ -226,19 +223,38 @@ const me = {
 me.city = "toronto";
 
 console.log(me);
+console.log("*****************************************************************************");
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 12")
 
+const me1 = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+delete me1.lastName;
+console.log(me1);
+console.log("*****************************************************************************");
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 13")
 
+const me2 = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+delete me2.skills[2];
+console.log(me2);
+console.log("*****************************************************************************");
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
@@ -250,4 +266,4 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("ESERCIZIO 15")
+
