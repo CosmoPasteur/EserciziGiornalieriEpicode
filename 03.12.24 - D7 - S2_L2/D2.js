@@ -262,7 +262,7 @@ console.log("*******************************************************************
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 14")
 
-const arrayVuoto = [];
+const arrayVuoto = ["1","2","3","4","5","6","7","8","9","10"];
 console.log(arrayVuoto);
 console.log("*****************************************************************************");
 
@@ -271,4 +271,10 @@ console.log("*******************************************************************
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 15");
+arrayVuoto.pop(9);
+arrayVuoto.push(100);
+console.log(arrayVuoto);
 
+console.log("*****************************************************************************");
+console.log("FINE");
