@@ -280,14 +280,14 @@ function randomCharacter() {
   const character = starWarsCharacters[randomIndex];
 }
 //Proprietà discorsiva
-const description = `${character.name} è un personaggio con le seguenti caratteristiche:
-    - Altezza: ${character.height} cm.
-    - Massa: ${character.mass} kg.
-    - Colore dei capelli: ${character.hair_color}.
-    - Colore della pelle: ${character.skin_color}.
-    - Colore degli occhi: ${character.eye_color}.
-    - Anno di nascita: ${character.birth_year}.
-    - Genere: ${character.gender}.`;
+const description = `${starWarsCharacters.name} è un personaggio con le seguenti caratteristiche:
+    - Altezza: ${starWarsCharacters.height} cm.
+    - Massa: ${starWarsCharacters.mass} kg.
+    - Colore dei capelli: ${starWarsCharacters.hair_color}.
+    - Colore della pelle: ${starWarsCharacters.skin_color}.
+    - Colore degli occhi: ${starWarsCharacters.eye_color}.
+    - Anno di nascita: ${starWarsCharacters.birth_year}.
+    - Genere: ${starWarsCharacters.gender}.`;
 
 // Stampiamo la descrizione in console
 console.log(description);
