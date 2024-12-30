@@ -120,16 +120,16 @@ console.log("ESERCIZIO 2")
 
 for(let i=0; i < starWarsCharacters.length; i++ ) {
   let obj = starWarsCharacters[i];
-  charactersNames.push(obj.name)
+  charactersNames.push(obj.name)    //Aggiungi il nome al nuovo array
 }
 
+//OPPURE:
 
-
-for(let i=0; i < starWarsCharacters.length; i++ ) {
+/*for(let i=0; i < starWarsCharacters.length; i++ ) {
   let obj = starWarsCharacters[i];
   charactersNames.push ({ name: starWarsCharacters[i].name});
-}
-console.log(charactersNames);
+}*/
+console.log(charactersNames);   //Stampa l'array con i nomi
 
 console.log("*********************************");
 
@@ -141,7 +141,7 @@ console.log("ESERCIZIO 3")
 
 femaleCharacters = [""]
 for(let i=0; i < starWarsCharacters.length; i++ ) {
-  femaleCharacters.push ({gender:starWarsCharacters[i].gender});
+  femaleCharacters.push ({gender:starWarsCharacters[i].gender === "female"});
 }
 console.log(femaleCharacters);
 console.log("*********************************");
@@ -150,18 +150,16 @@ console.log("*********************************");
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
 console.log("ESERCIZIO 4")
+
 const eyeColor = {
   blue: [],
   yellow: [],
   brown: [],
   red: [],
   'blue-gray': []
-
 }
 
-
-
-console.log (eyecolor)
+console.log (eyeColor)
 console.log("*********************************");
 
 /* ESERCIZIO 5
@@ -174,30 +172,38 @@ console.log("ESERCIZIO 5");
 
 for (const element of starWarsCharacters) {
   let obj = element
+  let eye_color = eyeColor
   switch (obj.eye_color) {
-    case 'blue': eyecolor.blue.push(obj); break;
-    case 'yellow': eyecolor.yellow.push(obj); break;
-    case 'brown': eyecolor.brown break.push(obj); break;
-    case 'eyecolor.red"); break;
-    case 'eyecolor.bluegray"); break;
-  
+    case 'blue': eye_color.blue.push(obj);
+     break;
+    case 'yellow': eye_color.yellow.push(obj);
+     break;
+    case 'brown': eye_color.brown.push(obj);
+     break;
+    case 'red': eye_color.red.push(obj);
+     break;
+    case 'bluegray': eye_color.bluegray.push(obj); 
+    break;  
   }
-
 }
-
-
-console.log(eyecolor);
-
+console.log(eyeColor);
 console.log("*********************************");
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+console.log("ESERCIZIO 6");
 
 let crewMass = 0;
+let i = 0;
 
+while (i < starWarsCharacters.length) {
+  crewMass += starWarsCharacters[i].mass; // Somma la massa dell'elemento corrente
+  i++; // Incrementa l'indice
 }
 
-console.log(crewMass)
+console.log(crewMass); // Stampa la massa totale
+console.log("*********************************");
+
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
 
@@ -209,13 +215,26 @@ console.log(crewMass)
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+console.log("ESERCIZIO 7");
 
-if(crewMass < 500) {console.log("Ship is under loaded") };
+if(crewMass < 500) {console.log("Ship is under loaded");
+} else if (crewMass > 500 && crewMass < 700) {
+  console.log("Ship is half loaded");
+} else if (crewMass > 700 && crewMass < 900) {
+  console.log("Warning: Load is over 700");
+} else if (crewMass > 900 && crewMass < 1000) {
+  console.log("Critical Load: Over 900");
+} else if (crewMass > 1000) {
+  console.log("DANGER! OVERLOAD ALERT: escape from ship now!")
+};
 
+console.log("*********************************");
 
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+console.log("ESERCIZIO 8");
+
 for (let i = 0; i < starWarsCharacters.length; i++) {
   let obj = starWarsCharacters[i];
 
@@ -229,7 +248,50 @@ console.log("*********************************");
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+console.log("ESERCIZIO 9");
+console.log("Lunghezza prima:", charactersNames.length); // Stampa la lunghezza prima dell'operazione
+// Rimuoviamo i nomi corrispondenti a personaggi femminili da charactersNames
+/*for (let i = 0; i < femaleCharacters.length; i++) {
+  //const element = femaleCharacters[i];
+   charactersNames.filter(name => name !== femaleCharacters[i].name);    // Rimuovi il nome dal array
+  } 
+  console.log(charactersNames.length)*/
+
+  for (let i = 0; i < femaleCharacters.length; i++) {
+    // Rimuoviamo ogni nome di personaggio femminile da charactersNames
+    let index = charactersNames.indexOf(femaleCharacters[i].name);
+    if (index !== -1) {
+      charactersNames.splice(index, 1); // Rimuovi l'elemento all'indice trovato
+    }
+  }
+console.log("Lunghezza dopo:", charactersNames.length); // Stampa la lunghezza dopo l'operazione
+console.log("*********************************");
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+console.log("ESERCIZIO 10");
+//Funzione per selezionare casualmente un elemento stampando le proprietà
+function randomCharacter() {
+  //Selezione di un indice casuale
+  const randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+  
+  // Otteniamo il personaggio casuale
+  const character = starWarsCharacters[randomIndex];
+}
+//Proprietà discorsiva
+const description = `${character.name} è un personaggio con le seguenti caratteristiche:
+    - Altezza: ${character.height} cm.
+    - Massa: ${character.mass} kg.
+    - Colore dei capelli: ${character.hair_color}.
+    - Colore della pelle: ${character.skin_color}.
+    - Colore degli occhi: ${character.eye_color}.
+    - Anno di nascita: ${character.birth_year}.
+    - Genere: ${character.gender}.`;
+
+// Stampiamo la descrizione in console
+console.log(description);
+
+// Eseguiamo la funzione per vedere un risultato casuale
+randomCharacter();
+console.log("*********************************");
