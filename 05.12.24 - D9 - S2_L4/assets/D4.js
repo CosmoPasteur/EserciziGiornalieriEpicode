@@ -167,16 +167,38 @@ const upperFirst = function(str) {
 
 const resUpperFirst = upperFirst("da diverse parole")
 console.log("Il risultato è:" + resUpperFirst)
-
+console.log("*************************************");
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("ESERCIZIO 9");
+function cutString(stringa) {
+    if (stringa.length > 1 ){
+        //Verifica che la stringa abbia almeno due caratteri
+        return stringa.slice(1, -1);
+    } else {
+        //se la stringa ha meno di due caratteri,ritorna una stringa vuota 
+        return "";
+    }
+}
+console.log("*************************************");
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 10");
+function giveMeRandom(n) {
+    let returnArray =[];
+
+    //Genera n numeri casuali e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
+    for(let i=0; i < 0; i++) {
+        returnArray.push(Math.floor(Math.random() * 11));
+    }
+    return returnArray;
+}
+console.log(giveMeRandom(5));
+console.log("*************************************");
