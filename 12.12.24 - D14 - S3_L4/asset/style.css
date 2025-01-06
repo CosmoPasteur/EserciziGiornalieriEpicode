@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#seleziona-tabelline {
+    margin-bottom: 20px;
+}
+
+#seleziona-tabelline label {
+    font-size: 18px;
+}
+
+#seleziona-tabelline input {
+    padding: 5px;
+    font-size: 16px;
+    width: 50px;
+}
+
+#seleziona-tabelline button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#seleziona-tabelline button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.tabellone {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* 10 colonne */
+    grid-template-rows: repeat(8, 50px); /* 8 righe */
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 3px solid #000; /* Bordo del tabellone */
+    padding: 10px; /* Spazio tra il bordo e le celle */
+    border-radius: 10px; /* Angoli arrotondati */
+    width: 550px; /* Impostiamo una larghezza fissa per il tabellone */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabelline-container {
+    margin-bottom: 20px;
+}
+
+.tabellina {
+    display: grid;
+    grid-template-columns: repeat(6, 50px); /* 6 colonne */
+    grid-template-rows: repeat(4, 50px); /* 4 righe */
+    gap: 5px;
+    margin: 10px auto;
+    border: 3px solid #000; /* Bordo che incornicia tutte le celle */
+    padding: 10px; /* Spazio tra il bordo e le celle */
+    border-radius: 10px; /* Angoli arrotondati */
+    width: 330px; /* Impostiamo una larghezza fissa per la tabella del giocatore */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cella {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.cella.evidenziata {
+    background-color: #ffdd57;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#numeroEstratto span {
+    font-weight: bold;
+    font-size: 20px;
+}
