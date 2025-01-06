@@ -47,6 +47,11 @@ ul li span{
     position: absolute;
 }
 
+.delete{
+    color: grey;
+    border: 1px solid black;
+}
+
 .delete::before {
     text-decoration: line-through;
     color: rgb(151, 2, 2);

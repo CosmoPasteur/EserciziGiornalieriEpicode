@@ -12,7 +12,7 @@ function btnBox() {
         // Crea il pulsante per cancellare
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";  // Il simbolo "×"
-        span.classList.add("delete"); // Puoi aggiungere una classe per lo stile (facoltativo)
+        span.classList.add("delete"); // Aggiungta di una classe per lo stile 
         li.appendChild(span);
 
         // Aggiungi il "li" alla lista
