@@ -204,14 +204,19 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
-    header{
-        
+    header div{
+      
     }
-    .header{
-        
+    nav{
+        float: right;
     }
-    .correlati {
+
+    h1{
+        f
+    }
+    
+    aside div{
         display: inline-block;
-        
+        width: 33%;
     }
 }
